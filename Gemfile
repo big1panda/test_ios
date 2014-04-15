@@ -12,14 +12,17 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier', '>= 1.0.3'
 end
-
 group :production do
+  gem 'pg', '0.15.1'
+  gem 'rails_12factor', '0.0.2'
+end
+# group :production do
   #production server is on Heroku
-  gem 'pg'
-end
-group :development, :test do
+#  gem 'pg'
+# end
+ group :development, :test do
   gem 'sqlite3'
-end
+ end
 
 gem 'heroku'
 
