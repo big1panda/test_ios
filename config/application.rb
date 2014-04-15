@@ -5,9 +5,9 @@ require 'rack/throttle'
 
 if defined?(Bundler)
   # If you precompile assets before deploying to production, use this line
-  Bundler.require(*Rails.groups(:assets => %w(development test)))
+  # Bundler.require(*Rails.groups(:assets => %w(development test)))
   # If you want your assets lazily compiled in production, use this line
-  # Bundler.require(:default, :assets, Rails.env)
+   Bundler.require(:default, :assets, Rails.env)
 end
 
 module NsrailsCom
@@ -53,6 +53,6 @@ module NsrailsCom
     config.assets.version = '1.0'
     
     # Allow Heroku to precompile during slug compilation
-    config.assets.initialize_on_precompile = false
+    config.assets.initialize_on_precompile = true
   end
 end

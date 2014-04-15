@@ -12,10 +12,10 @@ NsrailsCom::Application.configure do
   config.serve_static_assets = true
 
   # Compress JavaScripts and CSS
-  config.assets.compress = true
+  config.assets.compress = false
 
   # Don't fallback to assets pipeline if a precompiled asset is missed
-  config.assets.compile = false
+  config.assets.compile = true
   #config.assets.manifest = Rails.root.join("public/assets")
 
   # Generate digests for assets URLs
