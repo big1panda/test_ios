@@ -1,6 +1,6 @@
 -Post.all.reverse.each do |post| 
 	.container
-		.date= post.created_at.strftime("%b %e, %Y %H:%M:S")
+		.date= post.created_at.strftime("%b %e, %Y %H:%M:%S")
 		.author= post.author
 
 		.body= "“#{post.content}”"
